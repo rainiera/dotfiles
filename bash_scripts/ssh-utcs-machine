@@ -1,5 +1,5 @@
 #!usr/bin/expect -f
-spawn ssh myUsername@a-public-machine.cs.utexas.edu
+spawn ssh myUsername@linux.cs.utexas.edu
 expect "assword: "
 send "myPassword\r"
 interact
