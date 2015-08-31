@@ -1,0 +1,44 @@
+case ":$PATH:" in
+    *:$HOME/bin:*) ;; # do nothing if $PATH already contains $HOME/bin
+    *) PATH=$HOME/bin:$PATH ;; # in every other case, add it to the front
+esac
+
+export PS1="rainierababao$ "
+export PATH="/usr/local/mysql/bin:$PATH"
+
+alias ll='ls ~lahG'
+
+# Setting PATH for Python 3.4
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
+export PATH
+
+PATH="/usr/local/bin:$PATH"
+export PATH
+
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/dev
+source /usr/local/bin/virtualenvwrapper.sh
+
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+fi
+
+# export PATH=/usr/local/git/bin:$PATH
+
+
+# added by Anaconda 2.3.0 installer
+export PATH="/Users/rainierababao/anaconda/bin:$PATH"
+
+# for CUDA
+export PATH=/Developer/NVIDIA/CUDA-7.0/bin:$PATH
+export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-7.0/lib:$DYLD_LIBRARY_PATH
+
+alias ipy="python -c 'import IPython; IPython terminal.ipapp.launch_new_instance()'"
+
+alias istheapiworking="python /Users/rainierababao/dev/boldmetrics/apps/virtualtailor/api_tests/api_regression_test.py API -n 5"
+
+# put 'source activate boldmetrics' to run anaconda boldmetrics
+export PATH=${HOME}/miniconda/bin:${PATH}
+export PYTHONPATH='/Users/rainierababao/dev/boldmetrics':${PYTHONPATH}
+
