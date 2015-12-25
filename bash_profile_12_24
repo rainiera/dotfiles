@@ -1,0 +1,31 @@
+case ":$PATH:" in
+    *:$HOME/bin:*) ;; # do nothing if $PATH already contains $HOME/bin
+    *) PATH=$HOME/bin:$PATH ;; # in every other case, add it to the front
+esac
+
+export PS1="rainierababao$ "
+export PATH="/usr/local/mysql/bin:$PATH"
+
+alias ll='ls ~lahG'
+
+# Setting PATH for Python 3.4
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
+export PATH
+
+PATH="/usr/local/bin:$PATH"
+export PATH
+
+source /usr/local/bin/virtualenvwrapper.sh
+
+# added by Anaconda 2.3.0 installer
+export PATH="/Users/rainierababao/anaconda/bin:$PATH"
+
+# for CUDA
+export PATH=/Developer/NVIDIA/CUDA-7.0/bin:$PATH
+export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-7.0/lib:$DYLD_LIBRARY_PATH
+
+alias ipy="python -c 'import IPython; IPython terminal.ipapp.launch_new_instance()'"
+
+export PATH="$PATH:/usr/local/mongodb/bin"
+
