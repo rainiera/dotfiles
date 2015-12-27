@@ -8,6 +8,7 @@ with open("{}.md".format(('-').join(words)), "w") as beak:
     beak.write("Title: {}\n".format((' ').join(words)))
     beak.write("Date: {}\n".format(time.strftime("%Y-%m-%d")))
     beak.write("Category: General\n\n")
+    beak.write("#### Also a terrible attempt at writing a quine\n\n")
     beak.write("Automates writing test content with correct metadata for Pelican. This is the partial code for it, which can also be found [here](https://github.com/rainiera/dotfiles/blob/master/scripts/write_more.py):\n\n")
     beak.write("""
 ```
@@ -21,6 +22,7 @@ with open("{}.md".format(('-').join(words)), "w") as beak:
     beak.write("Title: {}\\n".format((' ').join(words)))
     beak.write("Date: {}\\n".format(time.strftime("%Y-%m-%d")))
     beak.write("Category: General\\n\\n")
-    # Turtles all the way down :)
+    beak.write("#### Also a terrible attempt at writing a quine\\n\\n")
+    # ...turtles all the way down :)
 ```
 """)
