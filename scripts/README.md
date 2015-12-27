@@ -1,12 +1,22 @@
 # dotfiles
 
-### update-rainier
+### write_more.py
+
+Script to start off a blog post in Markdown with correct metadata for Pelican. See my [blog post](http://rainier.io/seeing-if-this-script-worked.html)
+
+#### Usage:
+
+1. `python write_more.py My Blog Post`
+
+2. Add content to `blog/content/My-Blog-Post.md`. When you're done, `./fly-pelican`?
+
+### fly-pelican
 
 Script to update my personal website/blog.
 
 #### Usage:
 
-1. Create/update/delete pages in `blog/content/` with the appropriate metadata.
+1. Create/update/delete pages in `blog/content/` with the appropriate metadata. Use `write_more.py`?
 
 2. `./fly-pelican`
 
@@ -14,7 +24,7 @@ Script to update my personal website/blog.
 
 A simple script to log in to one of the UTCS public machines without having to type anything in.
 
-#### Usage:
+#### Example Usage:
 
 1. Change ```myUsername```, ```myPassword``` to the appropriate parameters.
 
