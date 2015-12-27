@@ -1,3 +1,4 @@
+source activate blog
 cd /Users/rainierababao/cs/rainier
 pelican content -o output -s pelicanconf.py
 ghp-import output
