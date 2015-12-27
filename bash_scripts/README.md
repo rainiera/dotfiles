@@ -1,5 +1,15 @@
 # dotfiles
 
+### update-rainier
+
+Script to update my personal website/blog.
+
+#### Usage:
+
+1. Create/update/delete pages in `blog/content/` with the appropriate metadata.
+
+2. `./fly-pelican`
+
 ### ssh-utcs-machine
 
 A simple script to log in to one of the UTCS public machines without having to type anything in.
