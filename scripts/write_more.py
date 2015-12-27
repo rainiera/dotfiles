@@ -1,6 +1,7 @@
 import sys
 import time
 import os
+import subprocess
 os.getcwd()
 os.chdir("/Users/rainierababao/cs/rainier/content/")
 words = [arg for arg in sys.argv[1:]]
@@ -26,3 +27,5 @@ with open("{}.md".format(('-').join(words)), "w") as beak:
     # ...turtles all the way down :)
 ```
 """)
+subprocess.call(["subl", "/Users/rainierababao/cs/rainier/content"])
+
