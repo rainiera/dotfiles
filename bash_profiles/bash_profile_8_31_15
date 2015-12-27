@@ -41,4 +41,3 @@ alias istheapiworking="python /Users/rainierababao/dev/boldmetrics/apps/virtualt
 # put 'source activate boldmetrics' to run anaconda boldmetrics
 export PATH=${HOME}/miniconda/bin:${PATH}
 export PYTHONPATH='/Users/rainierababao/dev/boldmetrics':${PYTHONPATH}
-

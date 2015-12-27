@@ -16,16 +16,12 @@ export PATH
 PATH="/usr/local/bin:$PATH"
 export PATH
 
-source /usr/local/bin/virtualenvwrapper.sh
-
-# added by Anaconda 2.3.0 installer
-export PATH="/Users/rainierababao/anaconda/bin:$PATH"
-
 # for CUDA
 export PATH=/Developer/NVIDIA/CUDA-7.0/bin:$PATH
 export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-7.0/lib:$DYLD_LIBRARY_PATH
 
-alias ipy="python -c 'import IPython; IPython terminal.ipapp.launch_new_instance()'"
-
+# for Mongo
 export PATH="$PATH:/usr/local/mongodb/bin"
 
+# added by Anaconda2 2.4.1 installer
+export PATH="/Users/rainierababao/anaconda2/bin:$PATH"
