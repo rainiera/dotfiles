@@ -2,6 +2,7 @@ import sys
 import time
 import os
 import subprocess
+print os.getcwd()
 os.getcwd()
 os.chdir("/Users/rainierababao/cs/rainier/content/")
 words = [arg for arg in sys.argv[1:]]
