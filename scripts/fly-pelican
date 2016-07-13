@@ -1,6 +1,5 @@
 source activate blog
-cd /Users/rainierababao/cs/rainier
+cd /Users/rainierababao/cs/gamma
 pelican content -o output -s pelicanconf.py
 ghp-import output
-git push git@github.com:rainiera/rainiera.github.io.git gh-pages:master
-echo "Published!"
+git push -f git@github.com:rainiera/rainiera.github.io.git gh-pages:master && echo "Published!"
