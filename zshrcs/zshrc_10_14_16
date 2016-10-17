@@ -113,6 +113,7 @@ alias testgdi="py.test --capture-sys | less && rm -r __pycache__/"
 
 # usage: `greppy "string" <dir>`
 alias greppy="grep -nr -i --include \*.py"
+alias grepppy="grep -nr -i --include \*.py -B 3 -A 3"
 
 # delete cache files that may interfere with tests recrusviely from the cur dir
 pyclean () {
