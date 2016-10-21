@@ -121,3 +121,6 @@ pyclean () {
     find . -type d -name "__pycache__" -delete
 }
 
+# the hackiest "only show python files" regex of all time ☹️
+alias gitspy='git status | grep '\''.py$\|Untracked files:\|(use\|"Changes not\|On branch master'\'''
+
