@@ -124,3 +124,4 @@ pyclean () {
 # the hackiest "only show python files" regex of all time ☹️
 alias gitspy='git status | grep '\''.py$\|Untracked files:\|(use\|"Changes not\|On branch master'\'''
 
+alias pylint='python =pylint'
