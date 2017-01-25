@@ -4,7 +4,7 @@ import os
 import subprocess
 print os.getcwd()
 os.getcwd()
-os.chdir("/Users/rainierababao/cs/rainier/content/")
+os.chdir("/Users/rainierababao/cs/gamma/content")
 words = [arg for arg in sys.argv[1:]]
 with open("{}.md".format(('-').join(words)), "w") as beak:
     beak.write("Title: {}\n".format((' ').join(words)))
@@ -18,7 +18,7 @@ import sys
 import time
 import os
 os.getcwd()
-os.chdir("/Users/rainierababao/cs/rainier/content/")
+os.chdir("/Users/rainierababao/cs/gamma/content")
 words = [arg for arg in sys.argv[1:]]
 with open("{}.md".format(('-').join(words)), "w") as beak:
     beak.write("Title: {}\\n".format((' ').join(words)))
@@ -28,5 +28,5 @@ with open("{}.md".format(('-').join(words)), "w") as beak:
     # ...turtles all the way down :)
 ```
 """)
-subprocess.call(["subl", "/Users/rainierababao/cs/rainier/content"])
+subprocess.call(["macdown", "/Users/rainierababao/cs/rainier/content"])
 
