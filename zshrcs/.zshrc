@@ -53,7 +53,9 @@ plugins=(git)
 
 # User configuration
 
-export PATH="/Users/rainierababao/anaconda2/bin:/Developer/NVIDIA/CUDA-7.0/bin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.4/bin:/usr/local/mysql/bin:/Users/rainierababao/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/local/mongodb/bin"
+alias hstart="/usr/local/Cellar/hadoop/2.7.2/sbin/start-dfs.sh;/usr/local/Cellar/hadoop/2.7.2/sbin/start-yarn.sh"
+alias hstop="/usr/local/Cellar/hadoop/2.7.2/sbin/stop-yarn.sh;/usr/local/Cellar/hadoop/2.7.2/sbin/stop-dfs.sh"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -82,3 +84,31 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export NVM_DIR="/Users/rainierababao/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+alias testgdi="py.test --capture-sys | less && rm -r __pycache__/"
+
+# greppy "string" <dir>
+alias greppy="grep -nr -i --include \*.py"
+
+pyclean () {
+    find . -type f -name "*.py[co]" -delete
+    find . -type d -name "__pycache__" -delete
+}
+
+export DYLD_FALLBACK_LIBRARY_PATH=/usr/lib:$HOME/anaconda/lib/:$DYLD_FALLBACK_LIBRARY_PATH
+
+# for MrQA
+export CLASSPATH=$CLASSPATH:data/corenlp/*
+
+# comment if trying to use brew python
+# export PATH="/Users/rainierababao/anaconda2/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/rainierababao/spark/bin"
+
+export PATH=~/.local/bin:$PATH
+export SPARK_HOME="/Users/rainierababao/spark"
+export JAVA_HOME=$(/usr/libexec/java_home)
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
